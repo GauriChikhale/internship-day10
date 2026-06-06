@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Portal</title>
+</head>
+
+<body>
+
+<h1>Student Result Portal</h1>
+
+
+<script>
+
+console.log("Student Result Generation Started...");
+
+
+// Step 1
+function checkStudentRecord() {
+
+    return new Promise((resolve,rejecct) => {
+
+        setTimeout(() => {
+
+            console.log("Checking Student Record...");
+            resolve();
+
+        }, 2000);
+
+    });
+
+}
+
+
+// Step 2
+function calculateMarks() {
+
+    return new Promise((resolve,reject) => {
+
+        setTimeout(() => {
+
+            console.log("Calculating Marks...");
+            resolve();
+
+        }, 2000);
+
+    });
+
+}
+
+
+// Step 3
+function generateResult() {
+
+    return new Promise((resolve,reject) => {
+
+        setTimeout(() => {
+
+            console.log("Generating Result...");
+            resolve();
+
+        }, 2000);
+
+    });
+
+}
+
+
+// Step 4
+function resultGenerated() {
+
+    return new Promise((resolve,reject) => {
+
+        setTimeout(() => {
+
+            console.log("Result Generated Successfully!");
+            resolve();
+
+        }, 2000);
+
+    });
+
+}
+
+
+// Async Await
+async function studentResultPortal(){
+
+    await checkStudentRecord();
+
+    await calculateMarks();
+
+    await generateResult();
+
+    await resultGenerated();
+
+
+    console.log("---------------------");
+
+    console.log("Student Name: Rahul");
+    console.log("Total Marks: 450");
+    console.log("Percentage: 90%");
+    console.log("Grade: A");
+
+    console.log("---------------------");
+
+}
+
+
+studentResultPortal();
+
+
+</script>
+
+
+</body>
+</html>
